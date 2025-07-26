@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile - WhyAmIHere</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body class="light-theme">
+  <nav class="navbar">
+    <div class="logo">WhyAmIHere</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="profile.html" class="active">Profile</a>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <main class="profile-page">
+    <section class="profile-header">
+      <img src="assets/images/profile.png" alt="Profile" class="profile-avatar" />
+      <h2 id="username">User</h2>
+      <p class="bio">Meme explorer. Part-time philosopher. Full-time 'why am I here?'</p>
+      <div class="profile-stats">
+        <div><strong id="uploadCount">8</strong> Memes Uploaded</div>
+        <div><strong id="likeCount">120</strong> Likes Received</div>
+        <div><strong id="savedCount">5</strong> Saved Memes</div>
+      </div>
+    </section>
+
+    <section class="meme-gallery">
+      <h3>My Memes</h3>
+      <div class="meme-grid" id="my-memes"></div>
+    </section>
+
+    <section class="meme-gallery">
+      <h3>Saved Memes</h3>
+      <div class="meme-grid" id="saved-memes"></div>
+    </section>
+  </main>
+
+  <script src="js/profile.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Meme – WhyAmIHere</title>
+  <link rel="stylesheet" href="css/upload.css">
+</head>
+<body class="light-theme kawaii">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">WhyAmIHere</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="feed.html">Feed</a>
+      <a href="explore.html">Explore</a>
+      <a href="#" class="active">Upload</a>
+      <button id="theme-toggle">🌓</button>
+    </div>
+  </nav>
+
+  <!-- Upload Form -->
+  <main class="upload-section">
+    <h1>Upload a Meme</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+      <label for="meme-title">Meme Title</label>
+      <input type="text" id="meme-title" name="title" required>
+
+      <label for="meme-category">Category</label>
+      <select id="meme-category" name="category" required>
+        <option value="">Select Category</option>
+        <option value="Dad Jokes">Dad Jokes</option>
+        <option value="Nibba-Nibbi">Nibba-Nibbi</option>
+        <option value="Tech Humor">Tech Humor</option>
+        <option value="Anime Memes">Anime Memes</option>
+        <option value="Food Funnies">Food Funnies</option>
+      </select>
+
+      <label for="meme-image">Upload Image</label>
+      <input type="file" id="meme-image" accept="image/*" required>
+
+      <button type="submit" class="btn-primary">Submit Meme</button>
+    </form>
+
+    <div id="preview">
+      <h2>Live Preview</h2>
+      <div class="preview-card" id="preview-card">
+        <p>No meme selected</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>

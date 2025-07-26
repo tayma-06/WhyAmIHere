@@ -1,0 +1,109 @@
+:root {
+  --primary: #ff69b4;
+  --bg-light: #fff;
+  --bg-dark: #121212;
+  --text-light: #111;
+  --text-dark: #eee;
+}
+
+body.light-theme {
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+}
+body.dark-theme {
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--bg);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.nav-links a, #theme-toggle {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Upload Form */
+.upload-section {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.upload-section h1 {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background-color: #ff3e9e;
+}
+
+/* Preview */
+#preview {
+  margin-top: 40px;
+}
+
+.preview-card {
+  background: var(--bg);
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.preview-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}

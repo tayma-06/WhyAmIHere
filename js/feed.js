@@ -1,7 +1,7 @@
 const memes = [
-  { title: 'Monday Mood', image: 'assets/memes/meme1.jpg' },
-  { title: 'Coding Life', image: 'assets/memes/meme2.jpg' },
-  { title: '404 Brain Not Found', image: 'assets/memes/meme3.jpg' }
+  { title: 'Monday Mood', image: 'assets/images/meme2.jpg' },
+  { title: 'Coding Life', image: 'assets/images/meme1.jpg' },
+  { title: '404 Brain Not Found', image: 'assets/images/meme3.jpg' }
 ];
 
 const feedGrid = document.getElementById('feed-grid');
