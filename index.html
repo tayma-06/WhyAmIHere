@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhyAmIHere - MemeVerse</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body class="light-theme">
+  <nav class="navbar">
+    <div class="logo">WhyAmIHere</div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="feed.html">Feed</a>
+      <a href="#upload">Upload</a>
+      <button id="theme-toggle">🌙</button>
+      <button id="login-btn" class="btn-primary">Login</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to the MemeVerse</h1>
+      <p>Discover, share, and float in meme chaos</p>
+      <button class="btn-primary">Get Started</button>
+    </section>
+
+    <section id="explore" class="categories">
+      <h2>Explore Categories</h2>
+      <div class="floating-categories" id="floating-categories"></div>
+    </section>
+
+    <section id="feed" class="meme-feed">
+      <h2>Trending Memes</h2>
+      <div class="meme-grid" id="meme-grid"></div>
+    </section>
+  </main>
+
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="auth-tabs">
+        <button class="tab active" data-tab="login">Login</button>
+        <button class="tab" data-tab="signup">Signup</button>
+      </div>
+      <div class="auth-forms">
+        <form id="login-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="btn-primary">Login</button>
+        </form>
+        <form id="signup-form" style="display: none;">
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

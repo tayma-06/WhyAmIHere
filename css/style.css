@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #ff69b4;
+  --secondary-color: #333;
+  --background-light: #ffffff;
+  --background-dark: #1a1a1a;
+  --text-light: #333;
+  --text-dark: #ffffff;
+}
+
+/* Themes */
+.light-theme {
+  --background: var(--background-light);
+  --text-color: var(--text-light);
+}
+
+.dark-theme {
+  --background: var(--background-dark);
+  --text-color: var(--text-dark);
+}
+
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+/* Explore */
+.categories {
+  padding: 40px;
+}
+
+.floating-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Meme Feed */
+.meme-feed {
+  padding: 40px;
+}
+
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: var(--background);
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+}
